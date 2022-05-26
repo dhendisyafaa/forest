@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deforestasi Hutan Kalimantan</title>
+    <link rel="stylesheet" href="blog 1 style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="navigasi">
+        <div class="logo">
+          <a href="IPAStampilan awal.html">Forest</a>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li><a href="../../IPAStampilan awal.html">HOME</a></li>
+            <li><a href="../Blog.html">BLOG</a></li>
+            <li><a href="../../QUOTES/Quotes.html">QUOTES</a></li>
+            <li><a href="../../ABOUT/About.html">ABOUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <div id="app">
+      <section id="hero">
+        <canvas id="canvas"></canvas>
+
+        <div class="content">
+          <p class="isiartikel">
+            <span class="judulartikel"><br /><br /></span>Deforestasi atau biasa
+            dikenal penggundulan hutan adalah kegiatan penebangan hutan dengan
+            tujuan mengalihfungsikan hutan menjadi suatu fungsi tertentu.<br /><br />Menurut
+            data Departemen Kehutanan, deforestasi di Kalimantan pada tahun 2000
+            sampai dengan 2005 mencapai sekitar 1,23 juta hektare. Itu artinya,
+            setiap hari pada periode tersebut hutan di Kalimantan mengalami
+            deforestasi sekitar 673 hektare. Tingginya laju deforestasi hutan di
+            Indonesia ini membuat Guiness Book of The Record menganugrahi
+            Indonesia sebagai negara dengan laju kerusakan hutannya tercepat di
+            dunia. Sebuah prestasi yang sangat tidak patut untuk dibanggakan.
+            <br /><br />
+            Dengan berkurangnya luas dan kualitas hutan di Kalimantan, itu
+            sangat berdampak besar terhadap berbagai satwa-satwa yang hidup di
+            hutan Kalimantan. Terutama bagi satwa-satwa yang sudah langka. Satwa
+            langka itu kondisinya terjepit diantara kehilangan tempat tingal,
+            sumber makanan, dan tempat berlindung dengan perburuan liar.
+            <br /><br />
+            Pulau Kalimantan merupakan pulau terbesar ketiga setelah Greenland
+            (2.166.086 Km2) dan New Guinea (821.400 Km2), namun juga mengalami
+            laju deforestasi yang termasuk tinggi di dunia. Menurut analisa
+            "Contributor and Victiim-Indonesia's Role in Global Climate Change
+            with Special Reference to Kalimantan" yang dipublikasi tahun 2009,
+            deforestasi memiliki peran yang besar dalam memperparah kondisi
+            krisis iklim. <br /><br />
+            Mengutip data Kementerian Lingkungan Hidup dan Kehutanan (KLHK),
+            angka deforestasi tahun 2018-2019 mencapai 462,4 ribu hektar
+            (netto). Ini naik dari tahun 2017-2018 yang mencapai 439,4 ribu
+            hektar. Namun menurun dari tahun 2016-2017 dengan 479 ribu hektar
+            dan tahun 2015-2016 dengan 630 ribu hektar.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/starback@2.0.1/dist/starback.js"></script>
+
+    <script>
+      const starback = new Starback("#canvas", {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+        type: "line",
+        speed: 3,
+        frequency: 3,
+        slope: { x: -1, y: 10 },
+        directionX: 1,
+        speed: 3,
+        spread: -10,
+        randomOpacity: true,
+        backgroundColor: [
+          "rgb(47, 129, 22)",
+          "rgb(47, 201, 22)",
+          "rgb(59, 94, 22)",
+        ],
+        quantity: 10,
+      });
+
+      let mountain = new Image();
+      mountain.src = "mountain2.png";
+
+      mountain.onload = () => {
+        starback.addToFront((ctx) => {
+          ctx.drawImage(
+            mountain,
+            0,
+            0,
+            mountain.width,
+            mountain.height,
+            0,
+            canvas.height - mountain.height,
+            canvas.width,
+            mountain.height
+          );
+        });
+      };
+    </script>
+  </body>
+</html>

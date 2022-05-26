@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.navigasi {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.logo a {
+  letter-spacing: 3px;
+  padding: 1px 15px 1px 15px;
+  border-radius: 5px;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 35px;
+  margin-bottom: 5px;
+  font-weight: normal;
+  float: left;
+  font-family: "Baloo";
+  color: rgb(251, 251, 251);
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: rgb(21, 251, 0);
+}
+
+.menu {
+  float: right;
+}
+
+nav {
+  position: fixed;
+  background-color: rgb(21, 126, 12);
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 50px;
+  top: 0;
+  opacity: 0.8;
+  z-index: 1;
+  border-bottom: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px 10px 5px 3px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 25px 0px 25px;
+  font-family: "Amaranth-Bold";
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(21, 251, 0);
+}
+
+.identitas {
+  margin-left: 8%;
+  margin-top: 15%;
+}
+
+.identitas h1 {
+  font-size: 50px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+span {
+  color: rgb(21, 126, 12);
+}
+
+span:hover {
+  color: rgb(21, 251, 0);
+}
+
+.identitas p {
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.images {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.images img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+  bottom: 40px;
+}
+
+.images:hover .boy {
+  left: 45%;
+}
+
+.social {
+  margin-left: 8%;
+  margin-top: 50px;
+}
+
+.social a {
+  font-size: 30px;
+  color: #212121;
+  margin-right: 20px;
+}
+
+.social a:hover {
+  color: rgb(21, 251, 0);
+}

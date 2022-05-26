@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.col-4 {
+  width: 45%;
+  height: 75vh;
+}
+
+
+body {
+  background-image: url("Stok Foto/Bgutama.jpeg");
+  size: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.borneo {
+  height: 400px;
+}
+
+.neon {
+  background-color: #0B4610;
+  font-family: 'Baloo';
+  padding: 5px 10px;
+  color: #ffffff;
+  letter-spacing: 6px;
+  text-decoration: none;
+  font-size: 28px;
+  transition: 0, 2s;
+}
+
+.neon:hover {
+  color: #AAC3AC;
+  background: #0F971C;
+  box-shadow: 0 0 900px #38FA6C, 0 0 90px #00FF00, 0 0 900px #13FD24, 0 0 90px #00FF00;
+}
+
+/* 
+.navigasi {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.logo a {
+  font-size: 40px;
+  margin-top: 10px;
+  margin-left: 35px;
+  font-weight: normal;
+  float: left;
+  font-family: Baloo;
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  float: right;
+}
+
+nav {
+  background: white;
+  opacity: 0.5;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 50px;
+  top: 0;
+  z-index: 1;
+  border-bottom: 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 25px 0px 25px;
+  font-family: 'Amaranth-Bold';
+  text-decoration: none;
+}
+
+.container {
+  width: 99%;
+  height: 99%;
+  margin: 1%;
+  align-content: center;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.container .kiri {
+  width: 470px;
+  height: 385px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.container .kanan {
+  width: 470px;
+  height: 385px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.kiri .utama {
+  color: #ffffff;
+  width: 500px;
+  height: 220px;
+  text-align: center;
+
+}
+
+.utama .forest {
+  text-align: center;
+  font-size: 100px;
+  width: 470px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.utama .jagaforest {
+  width: 470px;
+  margin: 5px;
+  font-size: 40px;
+  box-sizing: border-box;
+}
+
+*/

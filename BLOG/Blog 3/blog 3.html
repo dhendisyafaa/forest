@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tidak bisa melihat pengalaman! Ketidakjeraan oknum pembakar hutan
+    </title>
+    <link rel="stylesheet" href="blog 3 style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="navigasi">
+        <div class="logo">
+          <a href="IPAStampilan awal.html">Forest</a>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li><a href="../../IPAStampilan awal.html">HOME</a></li>
+            <li><a href="../Blog.html">BLOG</a></li>
+            <li><a href="../../QUOTES/Quotes.html">QUOTES</a></li>
+            <li><a href="../../ABOUT/About.html">ABOUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <div id="app">
+      <section id="hero">
+        <canvas id="canvas"></canvas>
+
+        <div class="content">
+          <p class="isiartikel">
+            <span class="judulartikel"><br /><br /></span>Hutan yang melintasi
+            Provinsi Nanggroe Aceh Darussalam, Sumatera Utara, Jambi, Sumatera
+            Barat, Sumatera Selatan, Bengkulu, dan Lampung berada dalam daftar
+            in danger yang artinya keberadaannya rawan akan ancaman yang dapat
+            berasal dari internal maupun eksternal. <br /><br />
+            Hutan Hujan Tropis Sumatera memiliki wilayah seluas 2,5 juta hektar
+            yang terdiri dari tiga taman nasional: Taman Nasional Gunung Leuser,
+            Taman Nasional Kerinci Seblat dan Taman Nasional Bukit Barisan
+            Selatan. Pada Taman Nasional Gunung Leuser, rencana pembangunan
+            bendungan PLTA hingga perburuan liar masih menjadi isu meresahkan di
+            sana. Taman Nasional Bukit Barisan Selatan mengalami fragmentasi
+            habitat, Saat ini terdapat tiga jalan nasional yang membelah taman
+            nasional itu, dan mengganggu habitat hewan sensitif seperti badak
+            sumatera. Taman Nasional Kerinci Seblat pun tak bernasib lebih baik.
+            Selain lahannya yang dijadikan perkebunan ilegal, harimau sumatera
+            juga menjadi salah satu target perburuan liar di sana.
+            <br /><br />Hutan Hujan Tropis Sumatera baru secara resmi berada
+            pada daftar in danger sejak tahun 2011. Hal tersebut didasarkan oleh
+            laporan-laporan yang diterima oleh UNESCO setiap tahunnya. Kawasan
+            Hutan Hujan Tropis berada pada daftar in danger bersama dengan 54
+            situs warisan lain dari seluruh dunia. Indonesia menjadi
+            satu-satunya dari Asia Tenggara yang situs warisan dunianya berada
+            pada daftar berbahaya. Keputusan ini diambil oleh Komite Warisan
+            Dunia yang mengadakan sesi ke-35 di Paris, Prancis.
+            <br /><br />Hutan Hujan Tropis Sumatera akhirnya menghuni "daftar
+            neraka" karena dianggap kehilangan unsur keaslian alamnya, baik dari
+            faktor flora sampai fauna. Kasus yang paling sering diberitakan
+            ialah soal kebakaran hutan di sana, yang hampir terjadi setiap
+            tahunnya.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/starback@2.0.1/dist/starback.js"></script>
+
+    <script>
+      const starback = new Starback("#canvas", {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+        type: "line",
+        speed: 3,
+        frequency: 3,
+        slope: { x: -1, y: 10 },
+        directionX: 1,
+        speed: 3,
+        spread: -10,
+        randomOpacity: true,
+        backgroundColor: [
+          "rgb(127, 193, 20)",
+          "rgb(228, 163, 64)",
+          "rgb(255, 2, 20)",
+        ],
+        quantity: 10,
+      });
+
+      let mountain = new Image();
+      mountain.src = "mountain2.png";
+
+      mountain.onload = () => {
+        starback.addToFront((ctx) => {
+          ctx.drawImage(
+            mountain,
+            0,
+            0,
+            mountain.width,
+            mountain.height,
+            0,
+            canvas.height - mountain.height,
+            canvas.width,
+            mountain.height
+          );
+        });
+      };
+    </script>
+  </body>
+</html>

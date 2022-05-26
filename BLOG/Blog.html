@@ -1,0 +1,237 @@
+<html>
+  <head>
+    <title>Forest</title>
+    <link rel="stylesheet" href="Blog Style.css" />
+  </head>
+
+  <body>
+    <!-- NAVIGASI BAR-->
+
+    <nav>
+      <div class="navigasi">
+        <div class="logo">
+          <a href="../IPAStampilan awal.html"><strong>Forest</strong></a>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="../IPAStampilan awal.html"><strong>HOME</strong></a>
+            </li>
+            <li>
+              <a href="blog.html"><strong>BLOG</strong></a>
+            </li>
+            <li>
+              <a href="../QUOTES/Quotes.html"><strong>QUOTES</strong></a>
+            </li>
+            <li>
+              <a href="../ABOUT/About.html"><strong>ABOUT</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+
+    <!-- SNOW FALL-->
+
+    <div id="app">
+      <div class="bg">
+        <img src="../Stok Foto/bgblog.png" />
+      </div>
+
+      <canvas id="canvas"></canvas>
+      <div class="text">
+        <h1>
+          Protecting the forest is the same as <br />
+          preparing for the future
+        </h1>
+        <p>Healthy forest. Bright Future</p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/starback@2.0.1/dist/starback.js"></script>
+
+    <script>
+      const starback = new Starback("#canvas", {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+        type: "dot",
+        quantity: 350,
+        starSize: [0, 2],
+        direction: 20,
+        starColor: "rgb(216, 255, 205)",
+        randomOpacity: [0.7, 1],
+        backgroundColor: "transparent",
+      });
+
+      // Parallax
+      let bg = document.querySelector(".bg img");
+
+      window.addEventListener("mousemove", (e) => {
+        let transform = `scale(1.1) `;
+        let sensitivity = 0.06;
+        let translateX = (e.clientX - window.innerWidth / 2) * sensitivity;
+        let translateY = (e.clientY - window.innerHeight / 2) * sensitivity;
+        transform += `translate(${translateX}px, ${translateY}px)`;
+        console.log(transform);
+        bg.style.transform = transform;
+      });
+    </script>
+
+    <!-- --------------------------------------------------------------------------- -->
+
+    <div class="listblog">
+      <div class="judul">
+        <h3>Facts to watch out about the forest</h3>
+      </div>
+
+      <div id="blog">
+        <a href="../BLOG/Blog 1/blog 1.html" class="judulblog"
+          >Deforestasi Hutan Kalimantan</a
+        >
+        <p>
+          Guiness Book of The Record menganugrahi Indonesia sebagai negara
+          dengan laju kerusakan hutannya tercepat di dunia. mengutip data
+          Kementerian Lingkungan Hidup dan Kehutanan (KLHK), angka deforestasi
+          tahun 2018-2019 mencapai 462,4 ribu hektar.
+          <a href="kumpulan blog/blog 1/blog 1.html" class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="../BLOG/Blog 2/blog 2.html" class="judulblog"
+          >Hutan Hujan Tropis Sumatera Berstatus “In Danger" oleh UNESCO</a
+        >
+        <p>
+          Hutan Hujan Tropis Sumatera baru secara resmi berada pada daftar in
+          danger sejak tahun 2011. Indonesia menjadi satu-satunya dari Asia
+          Tenggara yang situs warisan dunianya berada pada daftar berbahaya.
+          Keputusan ini diambil oleh Komite Warisan Dunia yang mengadakan sesi
+          ke-35 di Paris, Prancis.
+          <a href="kumpulan blog/blog 2/blog 2.html" class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="../BLOG/Blog 3/blog 3.html" class="judulblog"
+          >Tidak bisa melihat pengalaman! Ketidakjeraan oknum pembakar hutan</a
+        >
+        <p>
+          Pihak yang dirugikan sangatlah banyak, bukan hanya generasi masa kini,
+          justru generasi masa depan yang mungkin akan mengalami dampak besarnya
+          karena alam makin rusak, flora fauna berkurang, dan sumber daya alam
+          juga semakin terbatas.<br /><a
+            href="kumpulan blog/blog 1/blog 1.html"
+            class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="#" class="judulblog">Lorem ipsum dolor sit amet.</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+          soluta.<a href="kumpulan blog/blog 1/blog 1.html" class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="#" class="judulblog">Lorem ipsum dolor sit amet.</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.<a
+            href="kumpulan blog/blog 1/blog 1.html"
+            class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="#" class="judulblog">Lorem ipsum dolor sit amet.</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur.<a
+            href="kumpulan blog/blog 1/blog 1.html"
+            class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="#" class="judulblog">Lorem ipsum dolor sit amet.</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur.<a
+            href="kumpulan blog/blog 1/blog 1.html"
+            class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="#" class="judulblog">Lorem ipsum dolor sit amet.</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur.<a
+            href="kumpulan blog/blog 1/blog 1.html"
+            class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="#" class="judulblog">Lorem ipsum dolor sit amet.</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur.<a
+            href="kumpulan blog/blog 1/blog 1.html"
+            class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="#" class="judulblog">Lorem ipsum dolor sit amet.</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur.<a
+            href="kumpulan blog/blog 1/blog 1.html"
+            class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+
+      <div id="blog">
+        <a href="#" class="judulblog">Lorem ipsum dolor sit amet.</a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur.<a
+            href="kumpulan blog/blog 1/blog 1.html"
+            class="readmore"
+            >Read more</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------- -->
+
+    <section>
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </section>
+  </body>
+</html>
